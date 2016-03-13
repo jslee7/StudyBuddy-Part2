@@ -1,0 +1,7 @@
+gen
+bin
+tmp
+local.properties
+build.properties
+src/com/secretsockssoftware/androidflashcards/TAGS
+src/com/secretsockssoftware/androidflashcards/filters/TAGS
