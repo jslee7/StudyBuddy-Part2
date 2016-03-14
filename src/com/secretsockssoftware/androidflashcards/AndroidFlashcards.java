@@ -111,7 +111,7 @@ public class AndroidFlashcards extends ListActivity implements Runnable {
 		//addListenerOnButton();
 	}
 	
-	/*public void addListenerOnButton()
+	public void addListenerOnButton()
 	{
 		flashCard = (ImageButton) findViewById(R.id.imageButton1);
 		alarm = (ImageButton) findViewById(R.id.imageButton2);
@@ -134,7 +134,7 @@ public class AndroidFlashcards extends ListActivity implements Runnable {
 				
 			}
 		});
-	}*/
+	}
 
 	// This (and run()) are done in another thread so the ProgressDialog can be shown
 	private void parseLessons() {

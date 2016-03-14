@@ -18,6 +18,7 @@
 * along with "AndroidFlashcards". If not, see <http://www.gnu.org/licenses/>.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							xmlns:map="http://schemas.android.com/apk/res-auto"
 							android:layout_width="fill_parent"
 							android:layout_height="wrap_content"
 							android:orientation="horizontal">
@@ -29,7 +30,7 @@
      android:paddingRight="10px"
 		 android:gravity="center"
      android:src="@drawable/list_icon"/>
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	<LinearLayout
 								android:layout_width="fill_parent"
 								android:layout_height="wrap_content"
 								android:orientation="vertical">
