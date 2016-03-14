@@ -34,13 +34,17 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.AdapterView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -84,8 +88,9 @@ public class AndroidFlashcards extends ListActivity implements Runnable {
 	private final String rootDir = sdDir+File.separator+"flashcards";
 	private String curDir = rootDir;
 	
-	int dummy = 0;
-	int dummmy = 0;
+	ImageButton flashCard;
+	ImageButton alarm;
+	
 	
 	public static final String TAG = "AndroidFlashcards";
 
@@ -102,7 +107,34 @@ public class AndroidFlashcards extends ListActivity implements Runnable {
 		registerForContextMenu(getListView());
 
 		parseLessons();
+		
+		//addListenerOnButton();
 	}
+	
+	/*public void addListenerOnButton()
+	{
+		flashCard = (ImageButton) findViewById(R.id.imageButton1);
+		alarm = (ImageButton) findViewById(R.id.imageButton2);
+		
+		flashCard.setOnClickListener(new OnClickListener()
+		{
+			@Override
+			public void onClick(View arg0)
+			{
+				Toast.makeText(AndroidFlashcards.this, "flashcard clicked", Toast.LENGTH_SHORT).show();
+				
+			}
+		});
+		alarm.setOnClickListener(new OnClickListener()
+		{
+			@Override
+			public void onClick(View arg0)
+			{
+				Toast.makeText(AndroidFlashcards.this, "alarm clicked", Toast.LENGTH_SHORT).show();
+				
+			}
+		});
+	}*/
 
 	// This (and run()) are done in another thread so the ProgressDialog can be shown
 	private void parseLessons() {

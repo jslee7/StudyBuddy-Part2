@@ -21,7 +21,28 @@
 						 android:id="@+id/ac_flipper"
 						 android:layout_width="fill_parent"
 						 android:layout_height="fill_parent">
+	<!-- 
 	<include android:id="@+id/ac_front" layout="@layout/card_front"/>
 	<include android:id="@+id/ac_back"  layout="@layout/card_back"/>
+	-->
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/folder" />
+    
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon" />
+        
+</LinearLayout>
 </com.secretsockssoftware.androidflashcards.FixedFlipper>
 
